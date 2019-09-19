@@ -1,0 +1,4 @@
+Este equipo / OS(C:)/Usuarios/ Mariel ------> Ubicacion del contenido de git
+
+localhost:8888 ----> solo para programar en PHP
+Este equipo/OS(C:)/MAMP/htdcs  -------> solo para programar en PHP

@@ -1,0 +1,62 @@
+                                                                       Bootstrap
+
+Bootstrap: Archivo de css que tiene unas gran cantidad de modificadores de texto y diseños.
+
+Grilla -------> Tiene que estar en un container --> (media quris; estatico / fluido) Tiene 12 columnas fijas.
+
+CrossBrowser: sirve para cualquier browser o pagina web.
+
+Mobile First:
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+                                                                          FLEX
+
+
+Flex: Es propiedades del CSS
+
+display: flex
+flex-wrap: wrap; (pone las cosas en columnas)
+flex-direction:row; (los pone horizontal) viene de manera predeterminada
+
+Trabaj con 2 contenedores, "elemento flex"(hijo) y "contenedor flex"(padre).
+
+En caso de que quiera modificar un contenido de elemento flex, hay que convertir el elemento flex en contenedor flex, se hace usando display:flex;
+
+Flex organiza las cosas en columna tanto horizontal y verticalmente.
+
+
+flex-wrap: wrap; (sirve para que el contenido no sobre salga del contenedor)
+
+flex-wrap: wrap-reverse; (sirve para cambiar las posiciones del contenido; el primero pasa ultimo y ultimo a primero.)
+
+flex-direction: row; (direccion en el que quiero poner el contenido; su orden.)
+
+flex-direction: row-reverse; (cambia el orden)
+
+flex-direction: column; (pone en columnas todo el contenido)
+flex-direction: column-reverse; (lo mismo al reves)
+
+justity-content: flex-start; (mueve el contenido hacia el extremo izquierdo del contenedor)
+justity-content: flex-end, (lo mismo pero desde la derecha, pero desde el ultimo contenido al primero)
+justify-content: center; (Determina la posicion del contenido segun el contenedor)
+justify-content: space-between; (pone los contenidos pegados a los extremos, pero separados entre ellos; /objeto ---- objeto ---- objeto/) 
+justify_content: space-around; (Separa el contenido dejando espacios en blanco entre cada objeto ; /---- objeto---- objeto----objeto----/)
+(---- = espacio en blanco / = pared del contenedor)
+
+
+
+aling-items: strech; (estira el contenedor, y hace que el contenido abarque toda la columna)
+aling-items: flex-start; (pone el contenido en la parte superior de la columna)
+aling-items: flex-end; (pone el contenido en la parte inferior del contenedor)
+aling-items: center (centra el contenido segun si es fila o columna)
+aling-items:base-line (buscar la base de los elementos y los alinea)
+
+
+flex-items: algo; (nombre del contenido)
+
+flex-item(se usa); .algo (order x) (espara determinar el orden del contenido)
+
+flex-grown (se usa); .algo (flex-grown:1) (sirve para cambiar o modificar los tamaños de un contenido o varios)
+
+aling-self (se usa); .algo{aling-self:flex-start;} (sirve para modificar el lago de uno/varios de los elementos) 	

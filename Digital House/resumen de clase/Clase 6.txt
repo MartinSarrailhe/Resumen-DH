@@ -1,0 +1,68 @@
+                                                                         PHP
+Tiene que tener los index.php (para trabjar en atom)
+Se usa el localhost para acceder htdocs
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        Variables
+$numero = 4;------> integer (numeros sin .)
+$ string = "hola"; -----> (solo palabras)
+$ boleean = true -----> (VoF)
+$ decimal = 0.9; -----> float (numeros con .) 
+------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+                                                                          Arrays
+$ array = [1,4,"hola","ale"["azul","rojo","amarillo",]] ------> varias arrays en uno (multi arrays)
+$array.asoc=[ 
+                "nombre" => "ale",
+                "apellido" => "vivone",
+                "curso" => "fullstack"
+            ]-----> (relaciona el contido del array)
+ 
+Ejemplo numerico:                                    Ejemplo asosiativo: Van todos seguidos separados por una , y los datos entre entre "" y los arrays tambien.
+$superheroe = [                                      $superheror=[
+"Bruce",                                             "nombre" => "Bruce",
+"Hulk",                                              "superheroe" => "Hulk",
+["smash", "roar", "jump"],                           "poderes" => ["smash", "roar", "jump],
+"Avengers"                                           "grupo" => "Avengers"
+];                                                   ];
+
+Ejemplo Booleanos:
+
+$superheroe [] = true;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                         Condicionales
+if ----> if ($varibale == true) 
+           echo= "hola"
+
+== (igual contenido)
+!= (distinto)
+|| (o)
+&& (y)
+! (negacion)
+< (menor)
+> (mayor)
+<= (menor igual)
+>= ( mayor igual)
+
+if ternario -----> sirve para determinar si un dato es mayor a otro.
+ejemplo
+$a = 23
+$b= 58
+$max= a > b ? 23 : 58 ;
+echo = $max ; (aparece 58 en pantalla)
+
+Switch ----> Nos permite preguntar un condicion y darle diferentes resultados. ( donde esta mi celular; mi la mochila, en la mesa, mi bolsillo)
+ switch($colorremera) {
+
+case "rojo" 
+echo " la remera es roja"
+
+case "azul" 
+echo "la remerra es azul"
+
+case " amarillo"
+echo "la remera es amarilla" 
+
+brack;
+
+deafault: 
+echo " la remera multicolor" ;
+ 

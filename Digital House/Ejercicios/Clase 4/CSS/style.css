@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+ul{
+  overflow: hidden;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background-color: black;
+
+}
+.menu{
+  overflow: hidden;
+
+
+}
+.titulo{
+  float: left;
+  color: white;
+  margin: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+
+}
+.resto{
+  float: left;
+  color: white;
+  margin-left: 20px;
+
+
+}
+section{
+  text-align: center;
+}
+.TEXTO{
+  color: white;
+font-family: 'Lato', sans-serif;
+}
+.profile{
+  background-color: #18BC9C
+}
+.img{
+  width: 30%
+  margin: 20px;
+
+}
+.mensaje{
+  font-family: 'Lato', sans-serif;
+
+}

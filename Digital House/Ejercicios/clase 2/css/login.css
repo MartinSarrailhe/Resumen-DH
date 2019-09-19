@@ -1,0 +1,50 @@
+*{
+box-sizing: border-box;
+
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+
+body{
+  background-image: url("../ejercicio/img/bg-2.png");
+}
+header{
+  overflow: hidden;
+  width: 1140px;
+  background-color: red;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.logo{
+float: left;
+padding-top: 7px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.menu{
+  margin-right: 20px;
+}
+.menu{
+  float: left;
+  overflow: hidden;
+}
+.menu li,
+.login li{
+  float: left;
+  margin-right: 10px;
+}
+.menu li a,
+.login li a{
+color: #fff;
+}
+.login li:last-child{
+  margin-right: 0px;
+}
+.login{
+  float: right;
+  overflow: hidden;
+}

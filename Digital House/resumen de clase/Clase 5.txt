@@ -1,0 +1,98 @@
+GIT
+---------------------------------------------------------------------------------------------------------------------------------
+                                                                Herramientas en GIT
+
+git init
+
+git clone
+
+git status
+
+git add
+
+git status
+
+git commit -m (comentario)
+
+git push
+
+git push orgin master
+
+cd "carpeta" -----> Para abrir capertas
+
+ls 
+
+..(salir por cada .) cd 
+
+mkdir (crear carpeta)
+
+touch (crear archivo html,txt , etc) 
+----------------------------------------------------------------------------------------------------------------------------------
+                                                                 ¿Como se usa git?
+Es una herramienta que nos permita trabajar con lineas de codigo y permite que varias personas esten trbajando en un mismo codigo.
+
+Mi PC
+1) Crear repositorio local 
+        git init  /.git ----> carpeta oculta
+ 
+2) ¿ Cual es el estado?
+       git status
+        Archivos
+
+3)git add/ git add all -----> es para mover/enviar los archivos.
+° Asociar el repositor remoto.
+
+4) git push ------> Es el que se encarga de trasladar los archivos.
+° git commit -m ------> Es para ponerle un mensaje al archivo cuando se envia.
+
+5) git pull ------> Es el que se encarga de trae de vuelta los archivos.
+
+° git pull, se recomienda descargar todo el contenido y no mantenerlo por mucho tiempo.
+
+° git clone ----> Es el comando que hace que se descarge todo el contenido de github.
+
+Todos los que esten conectados a repositorio remoto tienen descargado tiene el mismo contenido, pero si ya esta descargado solo baja las ultimas actualizaciones
+que los otros allan subido. 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                          SCRUM
+
+Sirve para administrar un proyecto de manera sencilla entre varias personas
+
+Metodologia cascada: Forma organizada de relizar un proyecto, se podia dividir en varias partes. Tenias varias desventajas que son claves; es muy regida,
+flexible (no hay manera de modifcar lo pensado al principio). 
+
+Metodologia Ágiles: Hace mas facil y rapido el desarrollo del proyecto, por que permite la constante comunicacion entre las personas relacionas del proyecto.
+° Se le da aprox 3 semanas para entregar  algo funcional para determinar para que lado se va con el proyecto.
+
+Scrum: Seria un sistema de organizacion y de compromiso de los que se encuantran en el proyecto ( cliente, desarrollador, etc)
+° Feedback revision constante del proyecto para ver si tiene fallas.
+° product Backlog: Producto neto, protocolos, necesidades del cliente y vision general.
+° Sprint Backlog: Parte seleccionado del producto, division de tareas por x cantidad de tiempo.
+° Sprint: Periodo de desarrollo, tiempo minimo 2 maximo 3 semanas, ajustes del contenido.
+
+Product Owner: Habla en lugar del cliente, se encarga de averiguar las necesidades del cliente para empezar el desarrollo del proyecto.
+
+ScrumMaster: Facilita el trbajo del equipo, se encarga de facilitar o quitar obstaculos que no permiten avanzar el proyecto, tiene que estar al 
+tanto del proyecto en todo momento por que habla con Product Owner para determianr la entrega del producto.
+
+Equipo de Desarrollo: Entre 3 a 9 personas, tiene que haber personas con diferenteres capacidades en la programacion.
+
+Runion de planificacion de Sprint: En esta se selecciona con que se empeiza del producto neto, como se divide el equipo, el tiempo,
+ y como va estar organizado el proyecto.
+
+Daily Scrum: Es una reunion diraria, es para seguir el proyecto de cerca, si alguien se retraso, fallos, necesidades y como va el proyecto.
+
+Reunion de revison del Sprint: Reunion de presentacion del producto, se muestra que se termino, que no se hizo y 
+muestra de funcionalidades del producto terminado.
+
+Reunion de restrocpectiva del Sprint: Reunion donde se habla de los problemas propios de los programadores, retrasos a la hora de entrega, fallos que no 
+se revisaron.
+
+Scrum Sprint Task board: Tabla con columnas.}
+° Stories: Que queire el cliente/Usuario.
+° To Do: QUe se va a hacer y como.
+° In Progress: Actividades que estan en progeso.
+° To VerifY: revision de las cosas.
+° Done: Tareas completadas 

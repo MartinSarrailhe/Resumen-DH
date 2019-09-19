@@ -1,0 +1,54 @@
+                                                                        HTTP
+Es una forma de comunicacion entre personas y servidor para saber la respuesta del servidor te responde con codigos:
+
+100: En proceso.
+
+200: Anda la Pagina.
+
+400: Error por parte del usuario.
+
+500: Error por parte del programador/servidor.
+
+Query Strring ---------> Se pone al final de de (http/www.Mercadolibre.com/prodcuto.php (desde aca) ? id = 8 && categoria = "celulares
+
+? -----> Da inicio a Query Strings.
+
+&& -----> Apartir de aca empieza el contenido de las Query Strings
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                        GET
+Es para pedir archivos, informacion, lo que sea. Es una forma de comunicacion directa con el servidor, solo sirve para pedir informacion
+
+/$_ GET ------> Es la variable de get, para pedir informacion, pero solo funciona si, solo si hay Query Strings.
+
+/$-GET [" ID , CATEGORIA "]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                        POST
+
+
+Es para enviar informacion al servidor. Es una forma de comunicacion directa con el servidor, solo sirve para enviar informacion.
+
+/$_ POST ---------> Solo va a andar en casos  de formularios. 
+
+/$_POST ["NAME (de formulario) "]
+
+-------------------------------------------------------------
+°Las variables globales en su mayoria son arrays asociativos.- 
+° Trim -----> Sirve para que no se pueda completar los form con espacios en blacos 
+-------------------------------------------------------------
+ 
+ -Persistencia
+
+Es para para los formularios, en caso de un error no se borre el contenido correcto.
+
+
+- Validaciones
+
+Es para que a los usuarios, le salte errores sobre situaciones donde el usuario se equivoco.
+
+
+ ° Trim -----> Sirve para que no se pueda completar los form con espacios en blancos. 
+
+° IF ------> Se utilizan las condiciones para poder usar las validaciones.

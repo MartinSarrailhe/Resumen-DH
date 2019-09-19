@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  padding: 0px;
+
+}
+li{
+  list-style: none;
+}
+body{
+  background-image:url(../images/bg-body.png) ;
+}
+.main-header{
+  text-align: center;
+}
+.photo-container{
+  position: relative;
+}
+.photo{
+  width: 100%;
+}
+.special{
+  position: absolute;
+  right: 10px;
+  top: 0;
+
+}
+.zoom{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-transform:uppercase;
+display: inline-block;
+width: 100%;
+padding: 10px 0;
+text-align: center;
+
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+  border-radius: 50%;
+  width: 180px;
+  margin-bottom: 30px;
+  margin-top: 15;
+}
+.tonggle-nav{
+  width: 100%;
+  display: inline-block;
+}
+.encabezado{
+overflow: hidden;
+
+}
+.main-nav a{
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 0;
+  width: 100%;
+  display: inline-block;
+
+}
+.hola{
+  padding-top: 15px;
+  float: left;
+  height: 50px;
+  width: 180px;
+    margin-right: 20px;
+    color: white;
+    background-color: black;
+
+}
+
+.banner{
+  display: none;
+
+}
+.vip-product{
+  overflow: hidden;
+}
+
+article.product{
+  width: 380px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.pie{
+  margin-top: 30px;
+  overflow: hidden;
+}
+.zapato{
+  float: left;
+}
+@@media (min-width 768px) {
+  .container{
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .banner{
+    display: block;
+  }
+  .banner img{
+    width: 100%;
+  }
+  .vip-product{
+    overflow: hidden;
+  }
+  .product{
+    width: 50%
+    float:left;
+  }
+
+}

@@ -1,0 +1,22 @@
+                                                                     FOR
+for ($i = 0) ----> definimos la variable, siempre las variables van con $.
+
+for (($i = 0; N° < X/array.length) -------> Determina las codiciones del for.
+ .Count (nombre array) -----> es un return que se encarga de contar la cantidad de posiciones de un array y va en condicones.
+
+for ($i = 0; $i < array; $i ++) -----> Es el que denomina como se va a mover el ciclo, de en uno en uno ($i++).
+
+
+FOREACH ---------> es una forma mas sencilla de recorrer los arrays.
+
+Ejemplo de foreach
+foreach ($superheroe as (se pone position =>(no es obligatorio)) $datos) {
+if ($posicion == "powers") {
+echo "<p>" Poderes "</p>";
+foreach ( $superheroe [$posicion] as $poder) ------> $posicion = nombre de array o ubicacion. / $poder = los datos de los arrays.
+echo $poder . "<br>";
+}
+else{
+echo $datos . "<br>";
+}
+} 

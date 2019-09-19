@@ -1,0 +1,76 @@
+                                                 Cajas                                         
+<span>    in- inline-block (me deja usar cosas de bloques)                                                              
+ se usa en cajas lineales                                                                                               
+ se utiliza con:                                                                                                         
+ strong (negrita)               caja padre  ----- overflow:hidden; oculta la separacion entre cajas                    
+ obbn                            float --------- float: left;  Une las cajas                                              
+ em                               width ------  si o si tiene que tener un ancho determinado                              
+ ete                                                                                                                      
+ img                                                                                                                      
+ a                                                
+ 
+<div>                         width -------  modifica la caja en bloque (ancho)
+se usa en cajas en bloque    height ------   " (alto)
+los bloque son: 
+Header  (encabezado)        padding ------ " (separa contenido de los bordes)
+main                        border ----- " (cambia el tamaño del borde)
+section (                    margin ------- separa las cajas
+article (A)                 box-sizing:box-border -------- " (hace respetar los tamaños determinados de la caja)
+footer (conteniado)
+-----------------------------------------------------------------------------------------------------------------  
+                                                                 Formulario (botones)
+
+<form action=" " method= POST/GET>
+method ------ metodos de formulas
+action------ se suele poner links
+
+
+<label   for (name): "algo">
+contenido
+
+for: nombre 
+
+</label>
+
+<input id: "algo"  type: "text, pass, email, submit" name: "algo" value: "">
+
+
+type ------- se usa para determinar que tipo de texto queres
+submit : boton de si o no 
+email: tipo email
+pass: cambia la caracteristica de escritura
+
+
+name:determina un nombre para el contenido
+
+value---- se utiliza para determinar un valor fijo
+
+id: tiene que ser igual a for.
+
+<select>
+<option value: "ARG"> Argentina
+
+</option>
+
+</select>
+
+
+
+
+<textarea>
+</textarea>
+
+
+
+<botton> enviar </button>
+
+
+
+
+
+
+
+
+</form>                                           
+                                                
+                                              

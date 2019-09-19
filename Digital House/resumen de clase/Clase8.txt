@@ -1,0 +1,117 @@
+                                                                          Funciones
+
+Las funciones son reutilizables
+ Tiene 2 momentos, que hacer y como se hace.
+Funcion = function
+Argumento (parametro): Es lo que determina que va a tener la funcion. -----> function 1010101 (Parametro)
+
+
+
+El return en las funciones es para terminar la funcion en el momento en la que esta palabra aparce
+function saludar() {
+return "hola alguien"; 
+}
+
+Pero para aplicar la funcion en el codigo se tiene que repetir la funcion osea que se puede volver a poner la funcion pero sin necesidad de escribir toda la
+funcion de nuevo
+
+function saludar (){
+return "hola alguien";
+}
+ echo saludar() ; ---------> Se repite o se pega la funcion para que se aplique en el codigo.
+
+Parametro -----> Determina el nombre o que es el contenido de la funcion.
+
+function saludar ($nombre){ ----> se puede poner varios parametros separados por ,.
+
+return "hola $nombre" ;
+}
+
+$saludo = saludar("alguien") ------> Se determina que es el parametro string o numero.
+
+echo $saludo; 
+
+
+
+Para determinar un parametro "optativo" se pone function algo ( $nombre, $apellido = "no tiene") --------> En caso de que no se ponga el valor de $apellido
+por defecto va a aparcer "no tiene".
+
+
+function saludar ($nombre, $apellido= "no tiene"){
+return "hola $nombre $apellido";
+} 
+
+$saludo = saludar ("Alguien", "Su apellido"); -------> Como tiene valor de la optativa no aparece el "no tiene".
+echo $saludo;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                       IF CON FUNCIONES
+ 
+
+ifs con function
+
+
+function despertador(){
+$horaActual= date ("h": "i": "s")
+$horaDespertar=7;
+
+if($horaActual==$horaDespertar){
+return bip bip;
+}
+else{
+return "seguir durmiendo";
+}
+}
+
+echo despertador ();
+
+Otro Ejemplo
+
+$horaActual= ("h" : "i" : "s");
+$horaDespertador = 7;
+
+function despertador (hora1 , hora 2){
+global &horaActual ------>( global: Es para traer o usar variables de afuera de funcion directamente)
+
+if (hora1==hora2){
+return bip bip;
+}
+else { return "seguir durmiendo";
+}
+}
+echo despertador ($horaActual, $horaDespertador)
+
+
+Hay variables globales (fuera de la funcion) y varibles internas (dentro funcion).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                             Cuentas
+
+Sumas y cuentas en funciones
+
+function sumar (nume1, nume2){
+
+$resultado = 0; -----> Espara darle un valor a la x
+$resultado = $resultado(este seria x) + nume1 + nume2;
+
+return $resultado;
+}
+
+echo sumar (1,4);
+
+echo sumar (1,5);
+
+echo sumar (1,6);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                          INCLUDE / REQUIRE
+Sirve para llamar o pegar archivos de php ( tengo header, ul) y los quiero poner en el body de php uso estos 2. Simepre que no se repita los archivos con
+las partes del codigo que esten
+
+include("header.php")
+require ("ul.php")
+
+Include da errores de warning (errores no tan graves) 
+Require da errotres de "fatal error (para toda la funcion)
+
+include_ones / require _ ones (Es una variente que permite no se repitan los archivos dentro del codigo y que no se mezclen)

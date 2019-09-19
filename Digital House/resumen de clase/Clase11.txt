@@ -1,0 +1,35 @@
+                                                                      COOKIE
+
+Es una especie de array asociativo, que guarda la informacion en la pc del usuario, pero no es seguro 
+ y tiene un tiempo determinado. Ademas de que ayuda al servidor a poder identificar al usurio.
+
+SOLO SIRVE CON PHP !!!
+
+$_COOKIES
+
+
+setcookie () -----> Para crear una cookie
+
+setcookie("usuario"(parametro), "ale@dh.com"(valor), time (60s*60m*24hs*2ds) (no hace falta poner todos los parametros de tiempo) o se pone (0) para 
+que tenga tiempo ilimitado. 
+
+En caso de querer que una cookie deje de funcionar en el lugar de tiempo se pone -1 ------> setcookie (parametro, valor, t (-1))
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                   SESSION
+
+Es una especie de array asociativo, que guarda la informacion del usuario en el servidor, haciedno mas rapida el inicio de session.
+
+Se puede poner el contenido de las cookies en session ------> $_SESSION ["email"] $_COOKIE ["usuario"];  esto sirve para poder pasar contenido delicado o
+del usuario que se encuantra en las cookies, para que esten de manera segura en session.
+
+SOLO SIRVE CON PHP !!!
+
+session_start(): ---------> para crear SESSION
+
+$_SESSION -----> es la variable global
+
+
+$_SESSION["email"(parametro)]= "Karli@gmail.com"(valor);
