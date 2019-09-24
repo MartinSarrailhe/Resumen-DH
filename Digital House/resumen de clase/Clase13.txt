@@ -1,0 +1,84 @@
+                                                                   PHP Objetos
+
+Cada vez que se quiera agregar una clase hay que llamrla con el include a otro archivo donde se necesite
+
+
+Se llama una clase atravez de: Include "mascota.php"
+
+$miPerro = new Mascota () ----> Esta vinculado a la clase que se creo antes
+
+$miPerro ->nombre = "canela" ------> Esto es para agregar atributos 
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                    Clase individual
+
+
+Se llama una clase atravez de: Include "mascota.php"
+
+$miPerro = new Mascota ("Tweety", "Canario") ----> Esta vinculado a la clase que se creo antes. Los parametros de esto completan lo pedido en "__construct"
+
+$miPerro ->nombre = "canela"; ------> Esto es para agregar atributos, esto no se usa pero es una idea
+
+$miPerro -> setnombre("canela") ;   ------> Esto es para agregar atributos, solo anda si esta tiene en la clase una function setnombre
+
+Se pude agregar mas de un atributo en una misma linea miestras que este completo 
+                                 (esto marca el cambio de atributo)
+$miPerro -> setnombre ("Canela") -> setcolor("Tostada") -> setespecie -> ("Perro")
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                    Clase general
+
+Set ---> Es para settiar 
+
+get ---> Es dame esto
+
+function __construct -----> Es para que sea obligatoria completar, o dar preferencia a la hora de lo que queres que aparesca en pantalla 
+
+° Se le puede agregar un array. Array $datos
+
+
+$this (Esto) Es para cuando se pregunta o se pide algo, con este podes señalar de donde se saca lo pedido
+
+
+Crear php con nombre clase
+
+ class Mascota {
+
+private $nombre =;
+Private $color=;
+Private $especie= ;
+
+public function __construct ($nombre,$color,$especie){
+$this -> nombre = canela;
+$this -> especie  = canario;
+$this -> color = amarillo;
+}
+public function setNombre() {
+$this -> nombre = $nombre; 
+return $this;
+
+}
+public function getnombre()
+
+return $this -> nombre;
+}
+
+ejemplo array
+
+class Usuario{
+private $nombre;
+Private $mail;
+Private $password;
+public function __construct (array $datos){
+$this ->nombre = $datos ["nombre"];
+$this ->mail = $daots ["mail"];
+$this ->password = $this ->encrptarPassword($datos ["password"]);
+}
+private function encriptarPassword ($password){ -----------------> Es para encriptar una contraseña
+return password_hash ($password, PASSWORD_DEFAULT);
+}
