@@ -1,0 +1,35 @@
+                                                           OOP ( programcion orientada a objetos)
+
+
+
+Clase : Titulo del cuadro, nombre de objeto.
+Atributo: Es lo que describe al objeto y suelen ser variables.
+Resposabilidades/Metodos: Es la que describe las cosas que hace el objeto o la persona atravez de funciones.
+
+- Es para determinar que no se muestra a las personas (habitualmente se usa en atributo)
++  Es para determinar que si se muestra a las personas (se muestra en responsabilidades)
+
+Herencia: Es para que una clase (denomina padre) le pase sus atributos y metodos a las clases(hijo) para que esten relacionadas. Puede haber mas de 1 hijo (no hay limite)
+
+°Las clases hijos van en diferentes archivos
+
+
+clase padre (Mascotas) ---> clase hijo (perro) ----> Esta hereda todas las carateriscas y responsabilidades generales de la clase padre, ademas de las propias.
+
+
+Abstracta: Es para las clases padres, solo sirve para determinar que tipo de clase hijo voy a tener, la padre es equipo, las clases van hacer por deporte.
+Y obliga a las clases hijas a que definan los metodos (solo la que es igual a la de sus hermanas) dado que son distintan entre ellos 
+
+Clase <abs> Equipo ------> Clase Basquet (Sus metodos y atributos)
+                   \------> Clase Futbol (sus metodos y atributos) 
+
+Interfas: No tiene atributos, solo tiene metodos. Solo sirve para que algunas de las clases(hijos) que no comparten metodos entre ellos, por eso se crea 
+una interfas para las que si hagan este metodo lo puedan hacer.
+
+° Las interfases se señalan con <<algo>>
+
+Interfas <<Paseable>> (pasear) ----> Perro (atributos y metodos) ----> Gatos (Atributos y metodos)  Son las que la tienen la interfas
+                               \---> Canario (Atributos y metodos) ---> Serpiente (atributos y metodos) No tienen la interfas
+
+
+Polimorfismo: Depende de las funciones, son parametros que permite a las funciones realizarse
