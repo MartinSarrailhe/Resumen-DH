@@ -1,0 +1,46 @@
+                                                             MySQL
+
+
+-En las relaciones de 1 a muchos no usa una table intermedia. Se escribe 1/M
+
+- Todas las tablas estan conectadas (caso de diagrama) por verbos.
+
+- Las tablas son parecidas a las clases de OOP (solo a las que son realistas).
+
+-En relaciones de muchos a muchos se usa una tabla intermedia entre los 2 para relacionarlos. Se escribe M/M
+
+-Se maneja todos con id, cada dato tiene su id. 
+
+- En las tablas en los casos de 1/M en la tabla M se pone la id de los datos de la tabla 1 para relacionarlos 
+
+Ejemplos de 1/M
+
+Peliculas   M <------(tiene)--------> 1  Generos
+id:     1                                 id: 1
+nombre: Titanic                           genero: Drama
+clave foranea : 1
+
+
+Clave foranea es para relacionar las tablas sea 1/M o M/M
+
+
+Peliculas M<-----------------------------------------> M Generos
+id:
+nombre:
+clave:
+  /
+ /--------------
+M Actores        \
+id: 1             \
+nombre: Leonardo   \
+apellido: Di Caprio \
+                     \
+                      \
+                       Actores peliculas (tabla intermedia)
+
+                          ID          IDPeli         IDAct
+                           1             1             1
+                           2             1             6
+
+
+
