@@ -1,4 +1,4 @@
-                                                             MySQL
+                                                                          MySQL
 
 
 -En las relaciones de 1 a muchos no usa una table intermedia. Se escribe 1/M
@@ -43,4 +43,74 @@ apellido: Di Caprio \
                            2             1             6
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                           Tipos de datos
 
+
+
+
+°Numericos
+.Integer  (numeros - y +)
+.Tinyint 
+.Boolean (mejor usar Tinyint unsigned)
+.Integer auto_Increment (restrinccion)
+.Smallint, mediumint, bigint (cantidad de capasidad, vos sabes cuanto va ocupar)
+. Decimal (es para calcular decimales) 
+. Float   (Es para decimales es mas fijo)
+
+°Fecha
+.Date (dia)
+.Time (hora,mm,ss)
+.Datetime (aaaa,mm,dd,hs,mm,ss)
+
+°texto
+.Char  (100 caracteres)
+.Varchar (se puede modificar libre mente su contido)
+.Text  (libre cantidad)
+.Enum (especie de array de opciones)
+
+
+Restricciones de datos:
+
+-Primary key (Es para determinar cual es la columna princiapal,ID) 
+
+-Unique (dato de adentro no se repite)
+
+-Default (valor por default, si no se determina poner null/vacio)
+
+-Not null (Campos obligatorios)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              MySQL (WorkBench)
+
+
+create table -----> Crear tablas
+
+create schemas ---> Craer carpetas
+
+-- create; -----> Esto es para comentar y el ; es para terminar lo que se esta comentando
+
+
+Ejemplo de creaacion de una tabla:
+
+crate table usuarios(
+id [int unsigned not null primary key] -->(LAS RESTRICCIONES VAN EN MAYUSCULAS),
+email [varchar(100) unique],
+name [varchar(150)]
+); 
+
+INSERT INTO usuarios VALUES (   ------> Para agregar contenido a las columnas
+
+default, "ale@dh.com", "alejandro",
+);
+
+
+DROP TABLE usuarios; ----------> Elimanar tablas
+
+
+
+ALTER TABLE usuarios ---------> Es para alterar las tabla y agregar una columna
+
+ADD fech_nac datetime;
