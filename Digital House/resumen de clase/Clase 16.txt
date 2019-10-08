@@ -1,0 +1,70 @@
+
+                                                                        Select
+Es para seleccionar 2 columnas, y que te las traiga 
+
+SELECT NAME , Edad*10 --------> Es para selecionar y traer las columnas  (*10 solo 10 filas)
+FROM PERSONA  -----> que busque la info de ahi
+
+SELECT Apellido, dni_id, name   -----> Selecciona y buscar la columna apellido y dni_id
+FROM Apellido, dni
+
+Where dni_id = dni.id -----> dni. (tabla de dni) buscar en la columna de dni el id de los dnis
+         o
+WHERE dni_id = apellido.dni_id
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                   Where y Ordere by
+
+Buscar en donde suceseda alguna condicion 
+
+Select Name, Apellido, Edad
+From Persona
+Where Name = "Federico" -----> Que busque las personas con nombre federico
+ORDEr BY edad ASC DESC ------> ordena de mayor a menor/menor a mayor (Solo se pone uno de los 2 ASC o DESC)
+Where edad > 15 and edad < 25 -----> Edad entre
+where edad between 15 and 25 -----> Edad entre
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                     Limit y Offset
+LIMIT es para determinar cuantas filas quiero
+OFFSET es para saltiar filas
+
+LIMIT 3 ------> Trae solo 3 filas
+OFFSET 4 -----> saltea las primeras 4 filas
+(me trae la fila 5, 6 y 7)
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                     Between y like
+
+Between es para los interger y sirve para poner entre numeros (seguro sirve para ids y personas)
+
+Like es para buscar o descartar de una busqueda atravez de una referencia
+
+WHERE first_name LIKE "mike"
+WHERE first_name NOTLIKE "mike"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                          Alias
+
+Los alias sirve para poner un nombre distinto al que esta en la tabla.
+
+SELECT personas alias Usuarios -------> selecciono la tabla personas y le determina que para mi tambien se va a llamar usuarios
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                     Table Reference
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SELECT title, first_name, last_name, name
+FROM movies, actor_movie,actors,genres
+WHERE movies.id = actor_movie.movie_id
+AND actor.movie.actor_id = actors.id
+ADN movies.genre_id = genres.id
