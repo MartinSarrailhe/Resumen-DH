@@ -1,0 +1,62 @@
+                                                                    JOIN
+
+Sirve cuando yo quiero traer datos de un lado o de otro (tabla)
+
+Join right: Trae los datos que comparten coincidensias entre ellos. (De derecha a izquierda)
+
+Join left: Trae los datos que seleccione o pida . (De izquierda a derecha)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+                                                                       DISTINCT
+
+
+En caso de tener casos repetidos, el distinct evita que se repitan selecionando la primera opcion de todas que repita
+
+MARTIN, PEDRO, TOMAS, MARTIN -----> El DISTINCT seleciona el primer Martin
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+                                                                       GROUP BY
+
+
+Funciones de agregacion: Da un valor unico por tabla, grupo
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+                                                                        HAVING
+
+Es el WHERE de los datos agrupados, se encarga de filtra datos.
+
+-------------------------------------------------------------------------------------------------------------------------
+                                                                           COALESCE
+
+Sirve para reemplazar o ignorar los datos null de una tabla para que aparescan igula  
+
+-------------------------------------------------------------------------------------------------------------------------
+EJMPLOS
+
+
+Quiero ver las peliculas y sus generos (todos hasta los null)
+SELECT title, rating, length, genres.id
+FROM movies, genres
+--WHERE movies.genre_id = genres.id ----------> En caso de yo quiera peliculas tambien, no usar esto
+LEFT JOIN genres ON movies.genre_id = genre.id
+
+
+En que peliculas actuan cada actor/triz
+SELECT DISTINCT first_name, last_name, title
+FROM actors
+LEFT JOIN actor_movie ON actors.id = actor_movie.actor_id
+LEFT JOIN movies ON actor_movie ON movies.id = actor_movie.movie_id
+
+
+SELECT distintc clientes.nombre, clientes.apellido
+from clientes
+inner join ventas on ventas productos.id
+inner join
