@@ -1,0 +1,12 @@
+{                                                        PHP/MYSQL
+1) Se conecta
+
+2) Insert/Update --> A) Prepare
+                 \-> B) Execute
+
+3) Select
+a)
+b)        ---> feth
+c) Fetch /----> fetch all
+}  Place Holders
+

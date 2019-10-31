@@ -1,0 +1,42 @@
+
+Formulario
+\---> POST@CSRF o {{ CSRF_field}}
+ \      \-> route::POST (...)
+  \      \-> request -> $req [todos los datos del formulario]
+   \
+    \------> Validacion                           /-> opcional
+                $This-> validate ($req, $rules,$mesages)  
+
+
+
+Relaciones 
+
+Modelo----> clases (OOP)
+1:N
+-
+I has many
+I 
+I 
+I Belongs to
+-
+
+N:M
+-
+I
+I Belongs to many
+I 
+-
+
+
+
+Ruta------ \
+            \
+             \
+           -> Controlador
+         /   /
+        /   /
+       /   /
+Modelo   <-
+\
+ \
+  \ -> Data base
