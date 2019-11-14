@@ -1,0 +1,11 @@
+Auth -> reguladores/ logiarse
+      \-> @auth
+
+
+Migrations ----> Estructura de tablas
+
+Factores/seeders ---> Es para completar o mover informacion
+
+Middleware ----> Se pone entre la ruta y el controlador, es un filtro que evita que personas que no sean ADM puedan hacer modificaciones
+
+APis ---> Es un archivo jason 

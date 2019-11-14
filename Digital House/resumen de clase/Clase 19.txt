@@ -1,0 +1,24 @@
+                                                                                 LARAVEL
+
+Laravel = framework
+
+°Utiliza rutas/routes
+° Va a los controladores/"composer"/controllers envia y recive informacion de Models.
+° Models/model pasa y recive informacion de la base de datos.
+° Vistas/ views lo que va a parecer en la url/ o en la pagina segun como se ponga.
+
+
+MVC
+
+M: Modelo
+V: Vista
+C: Controlador  
+
+
+
+VIEW es una funcion, que su parametro seria un nombre.
+
+El segundo parametro es un array asosiativo, primero clave nombre de la clave y segundo el nombre.
+
+Cuando el parametro es optativo se pone un "?" al lado del parametro. Ejemplo :
+route:: get ("hola, {id?}", function($id)
